@@ -62,7 +62,10 @@ fun summ(vararg numbers :Int) {
 //filter
 val decorations = listOf ("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
 
-
+//Extension functions
+fun Int.multiply(number : Int) : Int{
+    return this * number
+}
 
 fun main() {
     val res1 = sum(5,8)
@@ -82,6 +85,8 @@ fun main() {
 
     println( decorations.filter {it[0] == 'p'})
 
+    val res5 = 4.multiply(7)
+    println(res5)
+    
+
 }
-
-
